@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# XML sitemap
+Sitemap: https://industrywala.vercel.app/sitemap.xml
+
+# Optional: let polite crawlers know they can fetch pages rapidly
+Crawl-delay: 1
