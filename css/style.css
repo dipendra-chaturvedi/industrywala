@@ -1,0 +1,192 @@
+/* Custom CSS for Gold Theme */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --industrial-gold: #FFCF3D;
+    --gold-dark: #E6B800;
+    --gold-light: #FFF4A3;
+    --industrial-dark: #1F2937;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Gold Button Effects */
+.btn-industrial-gold {
+    background: linear-gradient(135deg, #FFCF3D 0%, #E6B800 100%);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 207, 61, 0.3);
+}
+
+.btn-industrial-gold:hover {
+    background: linear-gradient(135deg, #E6B800 0%, #FFCF3D 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 207, 61, 0.4);
+}
+
+/* Gold Gradient Text */
+.text-gradient-gold {
+    background: linear-gradient(135deg, #FFCF3D 0%, #E6B800 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Gold Border Animation */
+.gold-border-animate {
+    position: relative;
+    overflow: hidden;
+}
+
+.gold-border-animate::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #FFCF3D, transparent);
+    animation: borderSlide 2s infinite;
+}
+
+@keyframes borderSlide {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+/* Gold Glow Effect */
+.gold-glow {
+    box-shadow: 0 0 20px rgba(255, 207, 61, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+.gold-glow:hover {
+    box-shadow: 0 0 30px rgba(255, 207, 61, 0.5);
+}
+
+/* Text Shadow for Gold Backgrounds */
+.text-shadow-lg {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Gold Gradient Backgrounds */
+.bg-gradient-gold {
+    background: linear-gradient(135deg, #FFCF3D 0%, #E6B800 100%);
+}
+
+.bg-gradient-gold-warm {
+    background: linear-gradient(135deg, #FFCF3D 0%, #FFB800 50%, #E6B800 100%);
+}
+
+.bg-gradient-gold-radial {
+    background: radial-gradient(circle at center, #FFCF3D 0%, #E6B800 100%);
+}
+
+/* Loading animation */
+.loading {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Custom scrollbar with Gold theme */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f8f9fa;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #FFCF3D 0%, #E6B800 100%);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #E6B800 0%, #FFCF3D 100%);
+}
+
+/* Gold themed selection */
+::selection {
+    background-color: #FFCF3D;
+    color: #1F2937;
+}
+
+::-moz-selection {
+    background-color: #FFCF3D;
+    color: #1F2937;
+}
+
+/* Card hover effects with gold theme */
+.card-hover-gold {
+    transition: all 0.3s ease;
+}
+
+.card-hover-gold:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255, 207, 61, 0.2);
+    border-color: #FFCF3D;
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Focus styles with gold theme */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid var(--industrial-gold);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px rgba(255, 207, 61, 0.2);
+}
+
+/* Gold accent lines */
+.accent-line-gold {
+    position: relative;
+}
+
+.accent-line-gold::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(135deg, #FFCF3D 0%, #E6B800 100%);
+    border-radius: 2px;
+}
+
+/* Responsive gold grid pattern */
+.gold-pattern {
+    background-image: 
+        radial-gradient(circle at 25px 25px, rgba(255, 207, 61, 0.1) 2%, transparent 50%),
+        radial-gradient(circle at 75px 75px, rgba(230, 184, 0, 0.1) 2%, transparent 50%);
+    background-size: 100px 100px;
+}
+
+/* Print styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    * {
+        background: white !important;
+        color: black !important;
+    }
+}
