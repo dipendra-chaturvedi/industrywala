@@ -1,17 +1,51 @@
 {
   "rewrites": [
-    { "source": "/",           "destination": "//" },
-    { "source": "/about-us",   "destination": "/about-us" },
-    { "source": "/blogs",      "destination": "/blogs" },
-    { "source": "/contact-us", "destination": "/contact-us" },
-    { "source": "/services",   "destination": "/services" }
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/about-us",
+      "destination": "/about-us.html"
+    },
+    {
+      "source": "/services-us",
+      "destination": "/services-us.html"
+    },
+    {
+      "source": "/contact-us",
+      "destination": "/contact-us.html"
+    },
+    {
+      "source": "/blogs",
+      "destination": "/blogs.html"
+    }
   ],
-
   "redirects": [
-    { "source": "//",      "destination": "/",           "permanent": true },
-    { "source": "/about-us",   "destination": "/about-us",   "permanent": true },
-    { "source": "/blogs",      "destination": "/blogs",      "permanent": true },
-    { "source": "/contact-us", "destination": "/contact-us", "permanent": true },
-    { "source": "/services",   "destination": "/services",   "permanent": true }
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/about-us.html",
+      "destination": "/about-us",
+      "permanent": true
+    },
+    {
+      "source": "/services-us.html",
+      "destination": "/services-us",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us.html",
+      "destination": "/contact-us",
+      "permanent": true
+    },
+    {
+      "source": "/blogs.html",
+      "destination": "/blogs",
+      "permanent": true
+    }
   ]
 }
