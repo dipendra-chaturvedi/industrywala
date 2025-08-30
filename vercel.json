@@ -9,8 +9,8 @@
       "destination": "/about-us.html"
     },
     {
-      "source": "/services-us",
-      "destination": "/services-us.html"
+      "source": "/services",
+      "destination": "/services.html"
     },
     {
       "source": "/contact-us",
