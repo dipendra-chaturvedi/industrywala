@@ -5,8 +5,8 @@
       "destination": "/index.html"
     },
     {
-      "source": "/about-us-us",
-      "destination": "/about-us-us.html"
+      "source": "/about-us",
+      "destination": "/about-us.html"
     },
     {
       "source": "/services",
@@ -28,8 +28,8 @@
       "permanent": true
     },
     {
-      "source": "/about-us-us.html",
-      "destination": "/about-us-us",
+      "source": "/about-us.html",
+      "destination": "/about-us",
       "permanent": true
     },
     {
